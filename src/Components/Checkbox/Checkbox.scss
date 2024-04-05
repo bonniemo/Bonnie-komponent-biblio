@@ -1,11 +1,18 @@
-$check-color: hotpink;
+$check-color: whitesmoke;
 
+//just to illustrate that the checkboxes inherits the colors, font and font size from the page / container.
 body {
-  color: whitesmoke;
-  padding: 1rem;
-  font-size: 1.2rem;
+    color: pink;
+    padding: 1rem;
+    font-size: 5rem;
 }
-.checkbox {
+
+.checkbox__label {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 1em;
+  margin-top: 1em;
+  align-items: center;
   font-size: inherit;
 
   // hiding the native checkbox
@@ -49,18 +56,11 @@ body {
     outline-offset: max(1px, 0.15em);
   }
 
-  .checkbox__label {
-    display: grid;
-    grid-template-columns: 1em auto;
-    gap: 1em;
-    margin-top: 1em;
-    align-items: center;
-  }
 
   .big {
     input[type="checkbox"]::before {
       width: 1.5em;
       height: 1.5em;
     }
-  }
+  }  
 }
