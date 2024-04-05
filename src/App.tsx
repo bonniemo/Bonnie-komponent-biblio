@@ -1,10 +1,16 @@
-import Checkbox from "./Components/Checkbox"
+import Checkbox from "./Components/Checkbox/Checkbox"
 
 
 const App = () => {
+  let animals = ["dog", "cat", "elephant", "lion", "tiger", "giraffe", "zebra", "bear", "penguin", "dolphin"]
+
   return (
     <>
-      <Checkbox/>
+    {
+      animals.map((animal) => (
+        <Checkbox title={animal}/>
+      ))
+    }
     </>
   )
 }
