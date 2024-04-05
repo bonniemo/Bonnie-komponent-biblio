@@ -1,18 +1,19 @@
 import './Checkbox.scss'
 
-type CheckTitle = {
+type CheckProps = {
     title: string;
+    big: boolean;    
 }
 
-const Checkbox = ({title}: CheckTitle) => {
+const Checkbox = ({title, big}: CheckProps) => {
   return (
     <section className="checkbox">
-        <label htmlFor="check" className="checkbox__label">
-            <input type="checkbox" name="checkbox" />
+        <label htmlFor="check" className={big ? "big checkbox__label" : "checkbox__label"}>
+            <input type="checkbox" name="checkbox"/>
             {title}
         </label>
     </section>
   )
 }
 
-export default Checkbox
+export default Checkbox;
