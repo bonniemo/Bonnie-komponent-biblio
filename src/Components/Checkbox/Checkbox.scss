@@ -7,7 +7,7 @@ body {
     font-size: 1.5rem;
 }
 
-.checkbox__label {
+.Checkbox {
   display: grid;
   grid-template-columns: 1em auto;
   gap: .7em;
@@ -61,7 +61,6 @@ body {
     outline: max(1px, 0.15em) solid currentColor;
     outline-offset: max(1px, 0.15em);
   }
-
 
   .big {
     input[type="checkbox"]::before {
