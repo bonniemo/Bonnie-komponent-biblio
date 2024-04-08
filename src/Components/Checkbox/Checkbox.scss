@@ -1,13 +1,7 @@
-$check-color: hotpink;
+@import "../../Sass/colors";
 
-body {
-  color: whitesmoke;
-  padding: 1rem;
-  font-size: 1.2rem;
-}
 .checkbox {
   font-size: inherit;
-
   // hiding the native checkbox
   input[type="checkbox"] {
     -webkit-appearance: none;
@@ -42,11 +36,6 @@ body {
 
   input[type="checkbox"]:checked::before {
     transform: scale(1);
-  }
-
-  input[type="checkbox"]:focus {
-    outline: max(1px, 0.15em) solid currentColor;
-    outline-offset: max(1px, 0.15em);
   }
 
   .checkbox__label {

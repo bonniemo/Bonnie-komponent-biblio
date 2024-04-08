@@ -8,7 +8,7 @@ const App = () => {
     <>
     {
       animals.map((animal, index) => (
-        <Checkbox key={index} title={animal} big={false}/>
+        <Checkbox key={index} title={animal} big={true}/>
       ))
     }
     </>
