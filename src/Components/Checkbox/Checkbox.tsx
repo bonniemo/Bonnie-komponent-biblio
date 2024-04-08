@@ -8,7 +8,7 @@ type CheckProps = {
 const Checkbox = ({title, big}: CheckProps) => {
   return (
     <>
-        <label htmlFor="check" className={big ? "big card Checkbox" : "Checkbox"}>
+        <label htmlFor="checkbox" className={big ? "big card Checkbox" : "Checkbox"}>
             <input type="checkbox" name="checkbox"/>
             {title}
         </label>

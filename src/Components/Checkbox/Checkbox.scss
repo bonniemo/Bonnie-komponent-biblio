@@ -8,13 +8,14 @@ body {
 }
 
 .Checkbox {
+  width: max-content;
   display: grid;
   grid-template-columns: 1em auto;
   gap: .7em;
   margin-top: .3em;
   align-items: center;
   font-size: inherit;
-  padding: .3em .5em;
+  padding: .5em .7em;
   border-radius: .8em;
 
     &:hover {
@@ -58,14 +59,13 @@ body {
   }
 
   input[type="checkbox"]:focus {
-    outline: max(1px, 0.15em) solid currentColor;
-    outline-offset: max(1px, 0.15em);
+    color: hotpink;
   }
 
   .big {
     input[type="checkbox"]::before {
-      width: 1.5em;
-      height: 1.5em;
+      width: 5em;
+      height: 5em;
     }
   }  
 }
