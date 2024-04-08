@@ -1,4 +1,4 @@
-@import "../../Sass/colors";
+@use "../../Sass/colors" as *;
 
 .checkbox {
   font-size: inherit;
