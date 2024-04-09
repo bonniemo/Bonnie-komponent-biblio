@@ -2,6 +2,7 @@ import { useState } from "react";
 import Checkbox from "../Checkbox/Checkbox";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import confetti from "https://esm.run/canvas-confetti@1";
+import "./Todo.scss"
 
 const Todo = () => {
   const [todos, setTodos] = useState([
@@ -36,18 +37,18 @@ const Todo = () => {
 
   return (
     <>
-      <ProgressBar title="Progress" percentage={progress} color={"green"} />
-      <article className="todo">
+      <article className="Todo">
         <h2>My Todos:</h2>
         {todos.map((todo, index) => (
-          <Checkbox
+            <Checkbox
             key={index}
             title={todo.title}
             isChecked={todo.isChecked}
             big={true}
             onChange={() => handleCheckboxChange(index)}
-          />
+            />
         ))}
+        <ProgressBar title="Progress" percentage={progress} />
       </article>
     </>
   );

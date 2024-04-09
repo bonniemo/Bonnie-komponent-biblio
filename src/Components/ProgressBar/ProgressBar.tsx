@@ -3,14 +3,13 @@ import "./ProgressBar.scss";
 
 type ProgressBarProps = {
   percentage: number;
-  title: string;
-  color: string;
+  title: string;  
 };
 
 const ProgressBar: React.FC<ProgressBarProps> = ({
   percentage,
   title,
-  color,
+  
 }) => {
   // State to manage the progress internally
   const [progress, setProgress] = useState<number>(0);
@@ -28,7 +27,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
         </h2>
         <div className="progress-bar-container">
           <div
-            style={{ width: `${progress}%`, backgroundColor: color }}
+            style={{ width: `${progress}%` }}
             className="progress-bar"
           />
         </div>
