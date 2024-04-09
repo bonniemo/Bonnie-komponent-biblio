@@ -1,0 +1,119 @@
+@import "../../Sass/colors";
+
+.Carousel {
+  width: 20rem;
+  min-height: 15rem;
+  height: auto;
+  border: $color-primary solid 2px;
+  padding: 1rem;
+
+  .carousel-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dotted $color-background-hover 2px;
+    width: 100%;
+    min-height: 15rem;
+    height: auto;
+
+
+    .btn {
+      width: auto;
+      height: 1.5rem;
+      background-color: $color-hover;
+      align-self: flex-start;
+      
+      .chevron-icon-left{
+        display: flex;
+        align-items: center;
+        color: $color-primary;
+      }
+
+      .chevron-icon-right{
+        color: $color-primary;
+     }
+
+      &:hover {
+        background-color: $color-background-hover;
+        color: $color-hover;
+      }
+
+      &.prev {
+        margin-top: 5rem;
+        margin-left: 0.3rem;
+      }
+
+      &.next {
+        margin-top: 5rem;
+        margin-right: 0.3rem;
+      }
+
+    }
+
+    .carousel-item {
+      width: 200px;
+      height: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center; /* Centrerar titeln */
+      justify-content: space-between;
+
+    &.clickedLeft {
+        animation: slideLeft 5s ease forwards;
+      }
+
+      &.clickedRight {
+        animation: slideRight
+         5s forwards;
+      }
+
+      .carousel-img {
+        width: 10rem;
+        height: 8rem;
+      }
+    }
+  }
+
+  #page-viewer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    #page-info-text {
+      border: solid $color-background-hover 1px;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes slideLeft {
+    0% {
+        left: 0px;
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        right: 1000px;
+      }
+  }
+
+@keyframes slideRight
+ {
+    0% {
+        left: 0px;
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        right: 1000px;
+      }
+  }
