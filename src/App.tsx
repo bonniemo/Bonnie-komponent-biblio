@@ -15,13 +15,9 @@ const App = () => {
 
   return (
     <>
-     
-
       <Header />
       <Form />
-
       <ProgressBar title="Progress" percentage={75} color={"green"} />
-
 
       <article className="todo">
         <h2>My Todos:</h2>
