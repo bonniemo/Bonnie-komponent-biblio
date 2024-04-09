@@ -9,13 +9,25 @@
     border-radius: 3rem;
     overflow: hidden;
     border: 2px solid $secondary-color;
-    height: 2rem;
+    height: 2.5rem;
   }
 
   .progress-bar {
     height: 100%;
     transition: width 0.5s ease;
-    background: rgb(202,50,202);
-background: linear-gradient(90deg, rgba(202,50,202,1) 0%, rgba(112,202,77,1) 36%, rgba(38,161,199,1) 86%);
+    background: rgb(202, 50, 202);
+    background: linear-gradient(
+      90deg,
+      rgba(202, 50, 202, 1) 0%,
+      rgba(112, 202, 77, 1) 36%,
+      rgba(38, 161, 199, 1) 86%
+    );
+    display: grid;
+    justify-content: center;
+  }
+  .progress-bar-txt {
+    color: rgb(21, 21, 21);
+    font-size: 2rem;
+    font-weight: 500;
   }
 }

@@ -23,13 +23,15 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     <>
       <div className="ProgressBar">
         <h2>
-          {title}: {progress}
+          {title}
         </h2>
         <div className="progress-bar-container">
           <div
             style={{ width: `${progress}%` }}
-            className="progress-bar"
-          />
+            className="progress-bar"            
+          >
+          <p className="progress-bar-txt">{progress > 0 && `${progress}%`}</p>
+          </div>
         </div>
       </div>
     </>

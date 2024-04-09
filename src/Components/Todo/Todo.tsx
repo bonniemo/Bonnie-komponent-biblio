@@ -48,7 +48,7 @@ const Todo = () => {
             onChange={() => handleCheckboxChange(index)}
             />
         ))}
-        <ProgressBar title="Progress" percentage={progress} />
+        <ProgressBar title="Task Accomplishment Bar" percentage={progress} />
       </article>
     </>
   );
