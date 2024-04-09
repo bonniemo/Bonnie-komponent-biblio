@@ -1,4 +1,7 @@
 import Checkbox from "./Components/Checkbox/Checkbox";
+
+import Form from "./Components/Form/Form";
+import Header from "./Components/Header/Header";
 import ProgressBar from "./Components/ProgressBar/ProgressBar";
 
 const App = () => {
@@ -12,7 +15,13 @@ const App = () => {
 
   return (
     <>
+     
+
+      <Header />
+      <Form />
+
       <ProgressBar title="Progress" percentage={75} color={"green"} />
+
 
       <article className="todo">
         <h2>My Todos:</h2>
