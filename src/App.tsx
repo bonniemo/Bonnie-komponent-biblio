@@ -2,25 +2,24 @@ import Checkbox from "./Components/Checkbox/Checkbox";
 import ProgressBar from "./Components/ProgressBar/ProgressBar";
 
 const App = () => {
-  let animals = [
-    "dog",
-    "cat",
-    "elephant",
-    "lion",
-    "tiger",
-    "giraffe",
-    "zebra",
-    "bear",
-    "penguin",
-    "dolphin",
+  let todos = [
+    "Finish homework",
+    "Go grocery shopping",
+    "Call mom",
+    "Workout for 30 minutes",
+    "Read a chapter of a book",
   ];
 
   return (
     <>
-      {animals.map((animal, index) => (
-        <Checkbox key={index} title={animal} big={true} />
-      ))}
       <ProgressBar title="Progress" percentage={75} color={"green"} />
+
+      <article className="todo">
+        <h2>My Todos:</h2>
+        {todos.map((todo, index) => (
+          <Checkbox key={index} title={todo} big={true} />
+        ))}
+      </article>
     </>
   );
 };
