@@ -2,6 +2,7 @@
   $primary-color: white;
   $secondary-color: rgba(112, 202, 77, 1);
   margin-top: 1rem;
+  max-width: 35rem;
 
   .progress-bar-container {
     margin-top: 1rem;
@@ -23,11 +24,12 @@
       rgba(38, 161, 199, 1) 86%
     );
     display: grid;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .progress-bar-txt {
     color: rgb(21, 21, 21);
     font-size: 2rem;
     font-weight: 500;
+    padding: 0 .5rem
   }
 }
