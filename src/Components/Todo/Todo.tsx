@@ -19,8 +19,13 @@ const Todo = () => {
   const [progress, setProgress] = useState(0);
 
   const handleCheckboxChange = (index: number) => {
-    todos[index].isChecked = !todos[index].isChecked;
-    setTodos([...todos]);
+    setTodos(todos => {
+      todos[index] = {
+        ...todos[index],
+        isChecked: !todos[index].isChecked
+      };
+      return [...todos];
+    });
 
     const checkedCount = todos.filter((todo) => todo.isChecked).length;
     const newProgress = Math.floor((checkedCount / todos.length) * 100);
